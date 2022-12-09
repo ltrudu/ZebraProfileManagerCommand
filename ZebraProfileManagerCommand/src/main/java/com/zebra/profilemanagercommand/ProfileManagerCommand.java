@@ -18,7 +18,7 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Date;
 
-class ProfileManagerCommand extends CommandBase {
+public class ProfileManagerCommand extends CommandBase {
     protected class ErrorHolder
     {
         // Provides the error type for characteristic-error

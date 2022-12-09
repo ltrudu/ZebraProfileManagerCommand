@@ -1,6 +1,6 @@
 package com.zebra.profilemanagercommand;
 
-enum EMessageType {
+public enum EMessageType {
     VERBOSE,
     WARNING,
     ERROR,

@@ -1,6 +1,6 @@
 package com.zebra.profilemanagercommand;
 
-class CommandBaseSettings
+public class CommandBaseSettings
 {
     /*
     Use this to track the source of the intent
