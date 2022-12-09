@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class ProfileManagerCommand extends CommandBase {
-    protected class ErrorHolder
+    public class ErrorHolder
     {
         // Provides the error type for characteristic-error
         protected String sErrorType = "";
@@ -93,7 +93,7 @@ public class ProfileManagerCommand extends CommandBase {
     };
 
 
-    protected ProfileManagerCommand(Context aContext) {
+    public ProfileManagerCommand(Context aContext) {
         super(aContext);
         mSettings = new CommandBaseSettings(){{
            mTimeOutMS = 20000;
@@ -108,7 +108,7 @@ public class ProfileManagerCommand extends CommandBase {
         onEMDKManagerClosed();
     }
 
-    protected void execute(String mxProfile, String mxProfileName, IResultCallbacks resutCallback)
+    public void execute(String mxProfile, String mxProfileName, IResultCallbacks resutCallback)
     {
         // Let's start the timeout mechanism
         super.execute(mSettings);
